@@ -1,0 +1,712 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+
+
+@font-face {
+    font-family: 'mostafa';
+    src: url(../Source_Code_Pro/static/SourceCodePro-Light.ttf);
+    font-family: 'semibold';
+    src: url(../Source_Code_Pro/static/SourceCodePro-ExtraBold.ttf);
+    font-family: 'regular';
+    src: url(../Source_Code_Pro/static/SourceCodePro-Regular.ttf);
+}
+
+
+
+nav {
+    border-top: .5px solid #4C4D4D;
+    border-bottom: .5px solid #4C4D4D;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+
+.navbar img {
+    width: 100px;
+}
+
+.navbar-nav {
+    position: relative;
+}
+
+.navbar-nav a {
+    color: white;
+    padding: 20px 15px;
+    transition: all, 0.5s;
+}
+
+.navbar-nav a:hover {
+    color: #00C3DA;
+}
+
+
+.icons i {
+
+    color: white;
+}
+
+
+.navbar-nav::after {
+    content: '';
+    width: 1px;
+    height: 84px;
+    background-color: #4C4D4D;
+    position: absolute;
+    right: -20px;
+    top: -10px;
+
+}
+
+.img1 {
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.73)), url(../images/bezel/bg-image-29.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.img2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.73)), url(../images/bezel/bg-image-28.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.carousel-caption {
+    bottom: 40%;
+}
+
+.carousel-item h1 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.carousel-item h4 {
+    font-size: 18px;
+    font-weight: 400;
+
+
+}
+
+.carousel-item .btn-primary {
+    border: 0;
+    background-color: #00C3DA;
+    padding: 10px 30px;
+}
+
+.carousel-item .btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 15px;
+    padding: 10px 30px;
+
+    transition: all 0.5s;
+}
+
+.carousel-item .btn-secondary:hover {
+    background-color: white;
+    color: black;
+}
+
+header .carousel-indicators {
+    padding: 70px 0;
+}
+
+
+
+header .carousel-control-next {
+    position: absolute;
+    left: 0;
+    margin-top: 40px;
+}
+
+header .carousel-slide {
+    position: relative;
+}
+
+header .carousel-control-prev,
+.carousel-control-next {
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 10;
+    border: 0.5px solid white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+
+}
+
+.sec1 {
+    padding: 100px 0 100px 0;
+    position: relative;
+}
+
+.sec1 .who-we-are {
+    text-align: center;
+}
+
+.sec1 .who-we-are h6 {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1f1f1f;
+}
+
+.sec1 .who-we-are p {
+    margin: 40px 0;
+    font-family: 'mostafa';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    color: #787878;
+
+}
+
+.sec1 .who-we-are span {
+    color: #00D5EE;
+    font-family: 'mostafa';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.sec1 .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1 .up {
+
+    margin: auto;
+}
+
+.sec1 .bu {
+    transition: all 0.5s;
+}
+
+
+.sec1 .btn span {
+
+    color: black;
+    transition: all 0.3s;
+
+}
+
+
+.sec1 .bu:hover {
+    background-color: black;
+}
+
+.sec1 .bu:hover span {
+    color: white;
+}
+
+.sec1 .btn {
+    padding: 0 25px;
+    font-family: 'mostafa';
+    font-weight: 1000;
+    font-size: 15px;
+    line-height: 50px;
+    border: 1px solid #dedede;
+    border-radius: 0;
+}
+
+.sec1::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+    position: absolute;
+    top: 100%;
+}
+
+.sec2 {
+    padding: 100px 0;
+}
+
+
+.sec2 .sec2Header {
+    text-align: center;
+
+}
+
+.sec2 img {
+    width: 100%;
+}
+
+.sec2 .sec2Header h2 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    ;
+    font-weight: 900;
+    font-size: 40px;
+    color: black;
+    position: relative;
+
+}
+
+.sec2 .sec2Header h2::after {
+    content: 'c';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    font-family: 'regular';
+    font-size: 100px;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    color: #F2F2F2;
+
+}
+
+.sec2 .sec2Header h4 {
+    color: #787878;
+    font-family: 'mostafa';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 10px 0;
+}
+
+.sec2 .toPadding {
+    padding: 25px 0;
+}
+
+.sec2 .about {
+    position: relative;
+    overflow: hidden;
+}
+
+.sec2 .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transition: all 0.5s;
+}
+
+.sec2 .about:hover .layer {
+    top: 0;
+    background-color: rgba(0, 220, 244, 0.889);
+}
+
+.sec2 .layer a {
+    color: white;
+}
+
+.sec2 .layer ul {
+    display: flex;
+    padding: 0;
+}
+
+.sec2 .layer ul li {
+    margin-right: 15px;
+}
+
+
+
+.sec2 .about .downLayer {
+    top: 380%;
+    color: white;
+}
+
+@font-face {
+    font-family: 'ddd';
+    src: url(../Source_Code_Pro/static/SourceCodePro-Medium.ttf);
+}
+
+.sec2 .about .downLayer h4 {
+    font-family: 'ddd';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.sec2 .about .downLayer span {
+    font-family: 'ddd';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+
+
+
+.sec3 {
+    background-color: #626262;
+    padding: 100px 0;
+    color: white;
+}
+
+.sec3 .up h4 {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    margin: 35px 0;
+    padding: 0 15px;
+}
+
+
+.sec3 .row {
+    padding: 25px 0;
+}
+
+.sec3 .left h2 {
+    font-weight: 900;
+    font-size: 40x;
+    line-height: 50px;
+    position: relative;
+
+}
+
+.sec3 .left h2 {
+
+    position: relative;
+    z-index: 5;
+}
+
+
+.sec3 .left h2::before {
+    content: 'W';
+    color: #6B6B6B;
+    font-size: 50px;
+    position: absolute;
+    bottom: 10px;
+    z-index: -1;
+    transform: translateX(-10%);
+
+}
+
+.sec3 .left p {
+    font-weight: 400;
+    font-size: 16x;
+    line-height: 25px;
+}
+
+.sec3 ul li {
+    padding-bottom: 10px;
+}
+
+.sec3 ul i {
+    margin-right: 10px;
+}
+
+.sec3 .middle {
+    transform: translateX(60%);
+}
+
+
+
+.sec4 {
+    padding: 100px 0;
+    background-color: #F7F7F7;
+}
+
+.sec4 .sec4Header {
+    text-align: center;
+}
+
+.sec4 .sec4Header h2 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    ;
+    font-weight: 900;
+    font-size: 40px;
+    color: black;
+    position: relative;
+    z-index: 5;
+
+}
+
+.sec4 .sec4Header h4 {
+    color: #787878;
+    font-family: 'mostafa';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 10px 0;
+
+
+}
+
+.sec4 .sec4Header h2::after {
+    content: 'c';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    font-family: 'regular';
+    font-size: 100px;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    color: #EAEAEA;
+}
+
+
+.sec4 .card {
+    padding: 45px 35px;
+    margin-top: 50px;
+}
+
+.sec4 .card .card-body {
+    padding: 0 16px 16px 16px;
+}
+
+.sec4 .card .card-body ul {
+    position: relative;
+    padding: 0;
+}
+
+.sec4 .card .card-body ul::before {
+    content: '';
+    width: 100%;
+    height: 0.8px;
+    background-color: #787878;
+    position: absolute;
+    right: 10px;
+    transform: translateX(3%);
+
+}
+
+.sec4 .card .card-body ul li {
+    color: #787878;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.sec4 .card .card-body .bu {
+    padding: 20px 0;
+}
+
+.sec4 .card .card-body .bu .btn {
+
+    background-color: #00C3DA;
+    border: 0;
+}
+
+.sec4 .card .card-body .bu span {
+    padding: 0 16px;
+
+}
+
+.sec4 .card .card-body .toColor {
+    color: #00C3DA;
+}
+
+.num3 {
+    scale: 1 110%;
+}
+
+.num3 .UP .best {
+    background-color: #00C3DA;
+    color: white;
+    height: 25px;
+    border-radius: 40px;
+    font-size: 9px;
+    font-weight: 400;
+    padding: 5px 10px 0px 10px;
+
+}
+
+.sec4 .row .price {
+    position: relative;
+}
+
+.sec4 .row .price .dolarSign {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+
+}
+
+.sec4 .row .price span {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+
+.sec5 {
+    background-color: #F7F7F7;
+    overflow: hidden;
+}
+
+.sec5 .container {
+    padding: 110px 0;
+}
+
+
+.sec5 .container h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #1F1F1F;
+}
+
+.sec5 .innerCarousel {
+    padding: 50px 180px;
+    border-radius: 10px;
+    padding-top: 0;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.sec5 .innerCarousel img {
+    width: 100px !important;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transform: translateY(-50%);
+
+}
+
+
+.sec5 .removePOsition {
+    position: static;
+}
+
+
+
+.sec5 .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 1 !important;
+}
+
+.sec5 .carousel-indicators .active {
+
+    background-color: #00C3DA;
+
+}
+
+.sec5 .carousel-inner {
+    overflow: unset;
+}
+
+.sec5 .carousel-inner .carousel-item h4 {
+    font-family: 'semibold', 'serif';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.sec5 .carousel-inner .carousel-item span {
+    font-weight: 500;
+    font-size: 12px;
+    color: #787878;
+
+}
+
+.sec5 .carousel-inner .carousel-item p {
+    font-weight: 300;
+    font-size: 18px;
+    color: #787878;
+
+}
+
+
+.sec5 .fa-solid {
+    color: #737B7C;
+    font-size: 40px;
+}
+
+
+.sec6 .container {
+    padding: 110px 60px;
+}
+
+iframe {
+    height: 100vh;
+}
+
+.sec6 .sec2Header h2 {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    ;
+    font-weight: 900;
+    font-size: 40px;
+    color: black;
+    position: relative;
+
+}
+
+.sec6 .sec2Header h2::after {
+    content: 'G';
+    position: absolute;
+    top: 0%;
+    font-family: 'regular';
+    font-size: 100px;
+    z-index: -1;
+    transform: translate(-430%, -50%);
+    color: #F2F2F2;
+
+}
+
+.sec6 .sec2Header h4 {
+    color: #787878;
+    font-family: 'mostafa';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 10px 0;
+}
+
+
+
+.form-control {
+    border: 2px solid #EEEEEE;
+    border-radius: 0;
+    padding: 0 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+.sec6 .bu .btn {
+
+    background-color: #00C3DA;
+    border: 0;
+}
+
+.sec6 .bu .btn {
+    padding: 10px;
+}
